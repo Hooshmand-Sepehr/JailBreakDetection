@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// This extension helps in adding certain ways to detect jailbroken devices
 extension UIDevice {
     var isSimulator: Bool {
         return TARGET_OS_SIMULATOR != 0
@@ -98,7 +99,6 @@ private struct JailBrokenHelper {
 }
 
 //Also, don't forget to add "Cydia" in LSApplicationQueriesSchemes key of info.plist. Otherwise canOpenURL will always return false.
-
 
 /*
 <key>LSApplicationQueriesSchemes</key>
